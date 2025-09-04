@@ -16,7 +16,7 @@ I collect notes, resources, and small projects from different technologies.
 - Terraform (Infrastructure as Code basics)
 
 ## 📂 Repository structure
-- `/certifications` → exam notes (AZ-900, AZ-104, AWS Practitioner)
+- `/certifications-notes` → exam notes (AZ-900, AZ-104, AWS Practitioner)
 - `/azure` → Azure notes and labs
 - `/aws` → AWS notes
 - `/git-github` → Git basics + CI/CD workflows
