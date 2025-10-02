@@ -44,10 +44,9 @@
 - `git fetch` – download remote changes without merging
 - `git pull` – fetch and merge
 
-#
-#
 
   ---
+
 
 ## Extra Notes
 
