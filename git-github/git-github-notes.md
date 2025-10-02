@@ -43,4 +43,37 @@
 ## Remote
 - `git fetch` – download remote changes without merging
 - `git pull` – fetch and merge
+
+  ---
+
+## Extra Notes
+
+- `rebase` – reapplies commits on top of another branch, rewriting history.  
+- `git pull --rebase` – update your branch without creating merge commits.  
+
+### Moving through commits
+- `HEAD^` – one commit back  
+- `HEAD~<num>` – move back `<num>` commits  
+- `git branch -f main HEAD~3` – force move branch `main` three commits back  
+
+### Undoing & modifying commits
+- `git revert <commit>` – create a new commit that undoes changes from the given commit  
+- `git commit --amend` – modify the last commit (message or staged files)  
+- `git rebase -i` – interactive rebase (edit, squash, reorder commits)  
+
+### Cherry-picking
+- `git cherry-pick <commit>` – apply a single commit from another branch  
+
+### Tags
+- `git tag v1.0` – lightweight tag  
+- `git tag -a v1.0 -m "Message"` – annotated tag  
+- `git push origin v1.0` – push a specific tag  
+
+### Fetch vs Pull
+- `git fetch` – downloads remote changes, **does not update working files**  
+- `git pull` – fetch + merge (or rebase)  
+
+### Fake teamwork (learning tool)
+- `git fakeTeamwork <branch> <num>` – simulate `<num>` fake commits on a branch (used in learning platforms like learngitbranching.js.org)
+
  
