@@ -13,6 +13,7 @@ I collect notes, resources, and small projects from different technologies.
 - Docker (containerization basics)
 - Linux (fundamentals + Bash scripting)
 - Terraform (Infrastructure as Code basics)
+- AWS (EC2, S3, IAM, VPC, CloudWatch, basic networking, shared responsibility model)
 
 ## 📂 Repository structure
 - `/certifications-notes` → exam notes (AZ-900, AZ-104, AWS Practitioner)
