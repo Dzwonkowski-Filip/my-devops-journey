@@ -1,0 +1,123 @@
+## Docker Image – Universal App Packaging
+
+- Dockerfile:
+  - FROM
+  - RUN
+  - WORKDIR
+  - COPY
+  - CMD
+  - (application distributed as tarball if needed)
+
+- Image layers:
+  - Python binaries + system libraries
+  - Flask
+  - Application code
+
+- Build image:
+  - docker build -t name:tag .
+
+
+# Docker Registry – Universal App Distribution (e.g. Docker Hub)
+
+- docker push user/repo:tag
+- docker pull user/repo:tag
+
+TIP:
+https://labs.play-with-docker.com/
+
+
+# Docker Container – Identical Runtime Environments
+
+- Container = running instance of image
+- Provides isolation
+- Reduces environment variance
+- Increases speed of change
+
+
+# Docker Installation (Ubuntu Server)
+
+- sudo apt install docker.io
+- docker run hello-world
+- docker login
+- export DOCKER_HOST=tcp://<ip>:2375
+
+
+# Monitoring & Inspection
+
+- docker ps
+- docker top <container>
+- docker stats
+- docker inspect <container>
+
+
+# Working with Containers
+
+- docker container run -it <image> [options]
+- docker container exec -it <container> bash
+- docker start -ai <container_name>
+- docker image ls
+
+
+# Docker Networking
+
+- docker container port <container>
+- docker network ls
+- docker network inspect <network>
+
+- docker network create --driver bridge <network_name>
+- docker network connect <network_name> <container>
+- docker network disconnect <network_name> <container>
+
+- docker network prune
+- docker network rm <network_name>
+
+
+# Docker Networks DNS
+
+- Built-in DNS
+- Containers in the same network communicate using container names
+
+
+# Docker Hub
+
+- docker pull name:version
+- docker login
+- docker logout
+- docker push user/repo:tag
+
+
+# Docker Images & Storage
+
+- docker image ls
+- docker image history <image>
+
+- Image layers
+- Storage drivers
+- Docker volumes vs bind mounts
+
+
+# Dockerfile Core Instructions
+
+- FROM
+- RUN
+- EXPOSE
+- COPY
+- WORKDIR
+- CMD
+
+
+# Core Concepts
+
+- Immutable infrastructure
+- Ephemeral containers
+- Data volumes
+- Bind mounts
+- Separation of concerns
+
+
+# Data Volumes
+
+- VOLUME /data   (inside Dockerfile)
+
+- docker volume create <volume_name>
+- docker run -v <volume_name>:/data <image>
