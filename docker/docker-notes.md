@@ -117,6 +117,7 @@ https://labs.play-with-docker.com/
 
 # Data Volumes
 
+* Volumes
 - docker volume ls
 - docker volume inspect <name_volume>
 - docker run -v name_of_data:/name_of_mout_data ex. /var/lib/name
@@ -128,4 +129,5 @@ https://labs.play-with-docker.com/
 
 - docker volume create --help
 - docker volume create
--
+
+* Bind Mount
