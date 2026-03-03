@@ -117,17 +117,16 @@ https://labs.play-with-docker.com/
 
 # Data Volumes
 
-* Volumes
-- docker volume ls
-- docker volume inspect <name_volume>
-- docker run -v name_of_data:/name_of_mout_data ex. /var/lib/name
-- VOLUME /data   (inside Dockerfile)
+- Volumes
+  - docker volume ls
+  - docker volume inspect <name_volume>
+  - docker run -v name_of_data:/name_of_mout_data ex. /var/lib/name
+  - VOLUME /data   (inside Dockerfile)
+  - docker volume create <volume_name>
+  - docker run -v <volume_name>:/data <image>
+  - searching name of volume in container docker inspect name_of_container | grep Mounts -A 15 (print 15 lines after target)
+  - docker volume create --help
+  - docker volume create
 
-- docker volume create <volume_name>
-- docker run -v <volume_name>:/data <image>
-- searching name of volume in container docker inspect name_of_container | grep Mounts -A 15 (print 15 lines after target)
-
-- docker volume create --help
-- docker volume create
-
-* Bind Mount
+- Bind Mount
+  -
