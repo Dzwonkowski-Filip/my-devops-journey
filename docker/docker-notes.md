@@ -130,3 +130,31 @@ https://labs.play-with-docker.com/
 
 - Bind Mount (always with /)
   - docker run -v $(pwd):/path_to_the_container_files
+
+## Dockerfile
+
+# Buildtime vs. Runtime
+
+| Instrukcja | Kiedy działa | Typ |
+|---|---|---|
+| `FROM` | Buildtime | Additive |
+| `ADD` | Buildtime | Additive |
+| `COPY` | Buildtime | Additive |
+| `RUN` | Buildtime | Additive |
+| `ONBUILD` | Buildtime | Additive |
+| `ARG` | Buildtime | Overwrite |
+| `LABEL` | Build + Runtime | Overwrite |
+| `ENV` | Build + Runtime | Overwrite |
+| `SHELL` | Build + Runtime | Overwrite |
+| `USER` | Build + Runtime | Overwrite |
+| `WORKDIR` | Build + Runtime | Overwrite |
+| `EXPOSE` | Runtime | Additive |
+| `VOLUME` | Runtime | Additive |
+| `CMD` | Runtime | Overwrite |
+| `ENTRYPOINT` | Runtime | Overwrite |
+| `STOPSIGNAL` | Runtime | Overwrite |
+| `HEALTHCHECK` | Runtime | Overwrite |
+
+Additive - can't be overwritten with a second statement.
+
+Overwrite - replace their previous use.
