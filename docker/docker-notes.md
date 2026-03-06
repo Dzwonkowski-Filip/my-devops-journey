@@ -135,7 +135,7 @@ https://labs.play-with-docker.com/
 
 # Buildtime vs. Runtime
 
-| Instrukcja | Kiedy działa | Typ |
+| Instruction | When | Type |
 |---|---|---|
 | `FROM` | Buildtime | Additive |
 | `ADD` | Buildtime | Additive |
