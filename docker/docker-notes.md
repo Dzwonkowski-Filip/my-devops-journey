@@ -158,3 +158,55 @@ https://labs.play-with-docker.com/
 Additive - can't be overwritten with a second statement.
 
 Overwrite - replace their previous use.
+
+# Linux Signals & PID 1 in Docker
+
+## Signals
+
+| Signal | Description |
+|------|------|
+| SIGTERM | Graceful shutdown |
+| SIGINT | Interrupt (Ctrl+C) |
+| SIGKILL | Immediate kill |
+
+Example:
+
+
+kill -15 <PID>   # SIGTERM
+kill -9 <PID>    # SIGKILL
+
+
+## Docker Stop Behavior
+
+
+docker stop <container>
+
+
+Docker sends:
+
+
+SIGTERM → wait 10s → SIGKILL
+
+
+## PID 1 in Containers
+
+PID 1 is the main process in a container.
+
+Responsibilities:
+- Handle signals
+- Clean zombie processes
+
+Problem:
+Most apps (Node, Python, etc.) are not designed to run as PID 1
+
+
+## Solution
+
+dockerfile
+ENTRYPOINT ["/sbin/tini", "--"]
+CMD ["node", "app.js"]
+
+
+Or run container with:
+
+docker run --init <image>
