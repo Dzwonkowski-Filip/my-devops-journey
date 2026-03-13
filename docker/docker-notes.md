@@ -210,3 +210,49 @@ CMD ["node", "app.js"]
 Or run container with:
 
 docker run --init <image>
+
+# Shell Form vs Exec Form
+## The Two Forms
+
+dockerfile
+# Exec form — JSON array, launched directly
+ENTRYPOINT ["node", "server.js"]
+
+# Shell form — plain string, launched via /bin/sh
+ENTRYPOINT node server.js
+
+
+---
+
+## Key Difference — PID 1
+
+Shell form — Docker launches `/bin/sh -c "node server.js"`. The shell is PID 1, your app is PID 2 (a child process). Signals from `docker stop` go to the shell, which ignores them. After 10 seconds Docker sends SIGKILL — brutal kill, no graceful shutdown.
+
+
+docker stop → SIGTERM → /bin/sh (PID 1) → ignored → SIGKILL after 10s 
+
+
+Exec form — Docker launches `node` directly. Your app is PID 1. Signals reach it immediately and it can shut down gracefully.
+
+
+docker stop → SIGTERM → node (PID 1) → graceful shutdown ✅
+
+
+---
+
+## When to Use Each
+
+| Instruction | Form | Reason |
+|---|---|---|
+| `RUN` | shell | needs `&&`, variables, pipes during build |
+| `ENTRYPOINT` | exec | app must be PID 1 to receive signals |
+| `CMD` | exec | appended to ENTRYPOINT as a clean argument |
+
+---
+
+## Golden Rule
+
+Always use exec form in `ENTRYPOINT` and `CMD`.
+Always use shell form in `RUN`.
+Never mix forms between `ENTRYPOINT` and `CMD`.
+
