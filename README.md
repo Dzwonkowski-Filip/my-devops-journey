@@ -5,25 +5,24 @@ I collect notes, resources, and small projects from different technologies.
 
 ## ✅ Certifications
 - [AZ-900: Microsoft Azure Fundamentals](https://learn.microsoft.com/en-us/users/filipdzwonkowski-7735/credentials/2084c49a2dbe698c?ref=https%3A%2F%2Fpl.linkedin.com%2F) 
-- Next: AZ-104 (Azure Administrator), AWS Cloud Practitioner 
+- Next: AZ-104 (Azure Administrator)
 
 ## 🌱 Currently learning
-- Azure administration (VMs, storage, networking, RBAC) 
+- Azure administration (VMs, storage, networking, RBAC)
 - Git & GitHub (version control + GitHub Actions pipelines)
 - Docker (containerization basics)
 - Linux (fundamentals + Bash scripting)
-- Terraform (Infrastructure as Code basics)
-- AWS (EC2, S3, IAM, VPC, CloudWatch, basic networking, shared responsibility model)
+
 
 ## 📂 Repository structure
-- `/certifications-notes` → exam notes (AZ-900, AZ-104, AWS Practitioner)
+- `/certifications-notes` → exam notes (AZ-900, AZ-104)
 - `/azure` → Azure notes and labs
-- `/aws` → AWS notes
-- `/git-github` → Git basics + CI/CD workflows
+- `/windows-ad` → Active Directory
+- `/git-github` → Git basics
 - `/docker` → Dockerfiles, docker-compose, notes
 - `/linux` → Linux commands, Bash scripts
-- `/terraform` → Terraform configs (Azure VM, Storage, Networking)
+
 
 ## 🎯 Purpose
 This repository is both my knowledge base and a portfolio for recruiters.
-It shows my journey from IT support/admin → Cloud & DevOps engineer.
+It shows my journey from IT support → IT Administrator, with a focus on infrastructure, systems, and cloud fundamentals.
