@@ -1,4 +1,4 @@
-# My DevOps Journey 🚀
+# My IT Journey 🚀
 
 This repository documents my personal learning path into Cloud & DevOps.
 I collect notes, resources, and small projects from different technologies.
