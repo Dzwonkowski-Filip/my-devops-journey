@@ -1,6 +1,6 @@
 # AZ-900: Microsoft Azure Fundamentals
 
-## 📘 Learning Path
+##  Learning Path
 To prepare for the AZ-900 exam I used a mix of courses, official docs, and practice tests:
 
 1. Udemy – Scott Duffy course
@@ -17,7 +17,7 @@ To prepare for the AZ-900 exam I used a mix of courses, official docs, and pract
 
 
 
-## 📝 Exam Experience
+##  Exam Experience
 - Date: 27.09.2025
 - Difficulty: Entry-level, but requires solid understanding of concepts
 - Most important topics:
