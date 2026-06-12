@@ -37,46 +37,46 @@ The certification builds practical knowledge of how to deploy, secure, monitor, 
 
 ---
 
-## 🗺️ Study Plan (4–6 Weeks)
+## 🗺️ Study Plan 
 
-### 🟢 Week 1 — Azure Basics
+- Azure Basics
 - Azure Portal, Resource Groups
 - Subscriptions and resources
 - Create first VM
 
-### 🟡 Week 2 — Identity (Entra ID)
+- Identity (Entra ID)
 - Users, Groups
 - RBAC roles
 - MFA basics
 
-### 🟠 Week 3 — Compute & Storage
+- Compute & Storage
 - Virtual Machines
 - Disks and backups
 - Storage accounts
 
-### 🔵 Week 4 — Networking
+- Networking
 - VNet, Subnets
 - NSG rules
 - Basic connectivity
 
-### 🔴 Week 5 — Monitoring
+- Monitoring
 - Azure Monitor
 - Alerts
 - Backup and recovery
 
-### ⚫ Week 6 — Revision & Practice
+- Revision & Practice
 - Practice exams
 - Review weak areas
 - Hands-on labs
 
 ---
 
-## 🛠️ Practical Approach
+##  Practical Approach
 - Use Azure free tier to build labs
 - Practice creating and managing resources
 - Document everything in this repository
 
 ---
 
-## 🎯 Goal
+##  Goal
 Gain practical Azure administration skills and prepare for the AZ-104 certification exam.
