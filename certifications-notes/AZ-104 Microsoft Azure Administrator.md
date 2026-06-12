@@ -1,6 +1,6 @@
 # AZ-104 Microsoft Azure Administrator ☁️
 
-## 📌 Overview
+##  Overview
 AZ-104 is a certification focused on managing cloud infrastructure in Microsoft Azure.  
 It validates skills required for an Azure Administrator role, including managing identities, virtual machines, networking, and storage.
 
@@ -8,36 +8,36 @@ The certification builds practical knowledge of how to deploy, secure, monitor, 
 
 ---
 
-## 🎯 Key Skills Covered
+##  Key Skills Covered
 
-### 🔐 Azure Identity & Governance
+###  Azure Identity & Governance
 - Microsoft Entra ID (users, groups, roles)
 - RBAC (Role-Based Access Control)
 - Subscriptions and resource management
 
-### 💻 Compute (Virtual Machines)
+###  Compute (Virtual Machines)
 - Creating and managing VMs
 - Availability and scaling
 - Backup and recovery
 
-### 💾 Storage
+###  Storage
 - Storage Accounts
 - Blob storage
 - Data protection
 
-### 🌐 Networking
+###  Networking
 - Virtual Networks (VNet)
 - Subnets, NSG
 - Load Balancer, VPN Gateway
 
-### 📊 Monitoring & Maintenance
+###  Monitoring & Maintenance
 - Azure Monitor
 - Alerts
 - Logs and diagnostics
 
 ---
 
-## 🗺️ Study Plan 
+##  Study Plan 
 
 - Azure Basics
 - Azure Portal, Resource Groups
