@@ -1,4 +1,4 @@
-# AZ-104: Microsoft Azure Administrator ☁️
+# AZ-104 Microsoft Azure Administrator ☁️
 
 ## 📌 Overview
 AZ-104 is a certification focused on managing cloud infrastructure in Microsoft Azure.  
