@@ -9,51 +9,48 @@
 ## Structure
 
 ```
-az104-notes/
+AZ-104/
+│
 ├── README.md
-├── 01-identity-governance/
-│   ├── README.md
+│
+├── 01-Identities-and-Governance/
 │   ├── entra-id.md
-│   ├── hybrid-identity.md
+│   ├── users-and-groups.md
 │   ├── rbac.md
-│   └── policy-management-groups.md
-├── 02-networking/
-│   ├── README.md
-│   ├── vnet-subnets-peering.md
-│   ├── nsg-asg-routing.md
-│   ├── vpn-expressroute-dns.md
-│   └── load-balancer-appgw-firewall.md
-├── 03-compute/
-│   ├── README.md
-│   ├── virtual-machines.md
-│   ├── arm-bicep-cli.md
-│   └── app-service-containers.md
-├── 04-storage/
-│   ├── README.md
+│   ├── azure-policy.md
+│   └── subscriptions-resource-groups.md
+│
+├── 02-Storage/
 │   ├── storage-accounts.md
-│   ├── blob-files-queues-tables.md
-│   └── access-sas-managed-identity.md
-└── 05-monitor-backup/
-    ├── README.md
-    ├── azure-monitor-log-analytics.md
-    └── backup-site-recovery.md
+│   ├── blob-storage.md
+│   ├── azure-files.md
+│   └── storage-security.md
+│
+├── 03-Compute/
+│   ├── virtual-machines.md
+│   ├── vm-availability.md
+│   ├── vm-scale-sets.md
+│   ├── app-service.md
+│   └── containers.md
+│
+├── 04-Networking/
+│   ├── virtual-networks.md
+│   ├── nsg.md
+│   ├── vnet-peering.md
+│   ├── routing.md
+│   ├── vpn.md
+│   └── load-balancing.md
+│
+├── 05-Monitoring-and-Backup/
+│   ├── azure-monitor.md
+│   ├── log-analytics.md
+│   ├── alerts.md
+│   ├── azure-backup.md
+│   └── site-recovery.md
+│
+└── 06-Revision/
+    ├── exam-tips.md
+    ├── common-mistakes.md
+    └── practice-questions.md
 ```
 
----
-
-## Exam Domains
-
-| # | Domain | Weight |
-|---|--------|--------|
-| 01 | Identity & Governance | 15–20% |
-| 02 | Networking | 25–30% |
-| 03 | Compute | 20–25% |
-| 04 | Storage | 10–15% |
-| 05 | Monitor & Backup | 10% |
-
-
-
-
----
-
-## General Notes
